@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Breathing Star</title>
+        <style>
+            
+            .star{
+                text-align: center;
+                top: 200px;
+                width: 300px;
+                height: 300px;
+                position:relative;
+                margin:0 auto;
+                overflow:hidden;
+            }
+            .img1{
+                margin-top: 100px;
+                width: 100px;
+                position:absolute;
+               -webkit-animation: breath 3s infinite ease-in-out alternate;
+                animation: breath 3s infinite ease-in-out alternate;
+            }
+            @-webkit-keyframes breath {
+                0% {opacity: .2;}
+                60%{opacity: 1;}
+                to {
+                    opacity: .2;
+                }
+                @keyframes breath{
+                    0%{opacity: .2;}
+                    60%{opacity :1;}
+                    to{
+                        opacity:.2;
+                    }
+                }
+            }
+        </style>
+        </head>
+        <body>
+            <div class="Star">
+                <img src="staar.jpg" class="img1">
+            </div>
+        </body>
+    
+</html>
